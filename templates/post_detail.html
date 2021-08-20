@@ -9,4 +9,8 @@
         </h2>
         <p>{{ post.body }}</p>
     </div>
+    <!-- buutons, better components -->
+    <p><a href="{% url 'post_edit' post.pk %}">+ Edit Blog Post</a>
+    <a href="{% url 'post_delete' post.pk %}">+ Delete Post</a>
+    </p>
 {% endblock content %}
